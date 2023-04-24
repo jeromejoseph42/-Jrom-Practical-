@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Loan Mortgage Calculator</title>
+
+</head>
+
+<body>
+    <h3>Home Loan Mortgage Calculator</h3>
+    <form>
+        <label for="loanAmount">Loan Amount (RM): </label>
+        <input type="number" id="loanAmount" name="loanAmount" required><br><br>
+        <label for="interestRate">Yearly Interest Rate (%): </label>
+        <input type="number" id="interestRate" name="interestRate" required><br><br>
+        <label for="totalMonths">Total No of Months: </label>
+        <input type="number" id="totalMonths" name="totalMonths" required><br><br>
+        <input type="button" value="Submit" onclick="calculateLoan()">
+        <input type="reset" value="Reset"><br><br>
+        <label for="monthlyPayment">Monthly Payment: RM</label>
+        <output id="monthlyPayment"></output><br><br>
+        <label for="totalPayment">Total Payment: RM</label>
+        <output id="totalPayment"></output><br><br>
+    </form>
+
+    <script src="loan.js"></script>
+</body>
+
+</html>
